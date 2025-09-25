@@ -1,0 +1,74 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 982px;
+  min-height: 926px;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("Assets/Salle1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+#player {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 800px;
+  image-rendering: pixelated;
+}
+
+#haltere {
+  position: absolute;
+  bottom: 30px;
+  left: 450px;
+  width: 120px;
+  image-rendering: pixelated;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+#haltere:hover {
+  filter: drop-shadow(0 0 10px white);
+}
+
+#backButton {
+  position: absolute;
+  border-radius: 10px;
+  top: 60px;
+  left: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(180, 180, 180);
+  display: none;
+  cursor: pointer;
+}
+
+#pushButton {
+  position: absolute;
+  border-radius: 10px;
+  bottom: 50px;
+  right: 450px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(77, 235, 72);
+  display: none;
+  cursor: pointer;
+}
+
+#repCounter {
+  position: absolute;
+  top : 70px;
+  right: 370px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
